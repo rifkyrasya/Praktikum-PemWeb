@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook</title>
+</head>
+<body style="background-color: whitesmoke;">
+    <header style="background-color: white; border: 3px solid black; max-width: 1400px; margin: 10px;">
+        <nav>
+            <ul style="list-style-type: none; display: flex; justify-content: space-between;">
+                <li>Home |</li>
+                <li>Generate Link |</li> 
+                <li>Transaction History |</li> 
+                <li>Policy |</li> 
+                <li style="margin-right: 200px;">Logout</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div style="display: flex; margin-top: 40px;">
+        <span>
+            <img style="border: 1px solid black; margin-left: 20px; margin-bottom: 10px; height: 250px; width: 300px;" src="/macbook air.jpg" alt="image"><br>
+            <input style="margin-left: 20px; width: 100px; padding-left: 5px; padding-right: 5px; box-shadow: 2px 2px 2px;" type="submit" value="Upload Picture">
+        </span>
+        <span style="margin-left: auto;">
+            <form method="post" action="send.php">
+                <div style="margin-right: 400px;">
+                    <p>
+                        Title Here :
+                        <input style="margin-left: 30px; width: 300px;" type="text" required>
+                    </p>
+                    <p>
+                        Description :
+                        <textarea style="margin-left: 20px;" name="description" cols="40" rows="8" required></textarea>
+                    </p>
+                    <p>
+                        Account Number :
+                        <input style="width: 300px;" type="text" name="account number" required>
+                    </p>
+                    <p>
+                        Bank :
+                        <input style="margin-left: 80px; width: 200px;" type="text" list="nama bank">
+                        <datalist id="nama bank">
+                            <option>HSBC</option>
+                            <option>HSBC</option>
+                            <option>HSBC</option>
+                        </datalist>
+                    </p>
+                    <p>
+                        Account Holder :
+                        <input style="margin-left: 10px; width: 300px;" type="text" placeholder="Name Here">
+                    </p>
+                    <p>
+                        Transaction :
+                        <select style="margin-left: 40px; margin-bottom: 10px;">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select><br>
+                        <input style="margin-left: 130px;" type="checkbox" id="hp">
+                        <label style="color: green;" for="hp">Send to Mobile Phone</label><br>
+                        <input style="margin-left: 130px;" type="checkbox" id="email">
+                        <label style="color: green;" for="email">Send to Email</label>
+                    </p>
+                    <p>
+                        Send to Mobile Phone :
+                        <input style="width: 260px;" type="number" id="hp">
+                    </p>
+                    <p>
+                        Send to Email :
+                        <input style="margin-left: 50px; width: 260px;" type="email" id="email">
+                    </p>
+                </div>
+            </form>
+
+            <div style="margin-top: 20px;">
+                <input style="margin-left: 40px; width: 25%; background-color: green; color: white;" type="submit" id="submit" value="Generate Nabr Link">
+            </div>
+        </span>
+    </div>
+</body>
+</html>
